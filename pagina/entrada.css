@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@source "./fuente.html";
+
+@theme {
+  --color-sol: #ffcb1f;
+  --color-tinta: #101a5c;
+  --color-mar: #2233d8;
+  --color-papel: #fff6e0;
+  --color-coral: #ff6f7d;
+  --color-menta: #5ff0b0;
+  --font-titulo: "Bricolage Grotesque Variable", "Arial Black", sans-serif;
+  --font-texto: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  :focus-visible { outline: 3px solid currentColor; outline-offset: 3px; border-radius: 4px; }
+}
+
+/* La única animación automática: el vídeo se dibuja al abrir la página. */
+.traza { stroke-dasharray: 1; stroke-dashoffset: 1; animation: trazar 1s .15s cubic-bezier(.6,0,.2,1) forwards; }
+.agua { transform-box: fill-box; transform-origin: bottom; transform: scaleY(0); animation: llenar .7s .9s cubic-bezier(.3,0,.2,1) forwards; }
+.cubo { transform-box: fill-box; transform-origin: center; transform: translateY(-330px) rotate(-14deg); animation: caer 1s 1.45s cubic-bezier(.3,1.5,.5,1) forwards, flotar 3.6s 2.5s ease-in-out infinite; }
+.onda { transform-box: fill-box; transform-origin: center; opacity: 0; animation: onda 1.1s 1.95s ease-out forwards; }
+.subtitulo { opacity: 0; transform-box: fill-box; transform: translateY(14px); animation: aparecer .35s 2.35s ease-out forwards; }
+.pegatina { transform-origin: 20% 80%; transform: rotate(7deg) scale(0); animation: pegar .45s 2.6s cubic-bezier(.3,1.7,.5,1) forwards; }
+
+@keyframes trazar { to { stroke-dashoffset: 0; } }
+@keyframes llenar { to { transform: scaleY(1); } }
+@keyframes caer { to { transform: translateY(0) rotate(4deg); } }
+@keyframes flotar { 0%,100% { transform: translateY(0) rotate(4deg); } 50% { transform: translateY(-7px) rotate(1deg); } }
+@keyframes onda { 0% { opacity: .9; transform: scale(.4); } 100% { opacity: 0; transform: scale(1.5); } }
+@keyframes aparecer { to { opacity: 1; transform: translateY(0); } }
+@keyframes pegar { to { transform: rotate(7deg) scale(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .traza, .agua, .cubo, .onda, .subtitulo, .pegatina { animation: none; }
+  .traza { stroke-dashoffset: 0; }
+  .agua { transform: none; }
+  .cubo { transform: rotate(4deg); }
+  .subtitulo { opacity: 1; transform: none; }
+  .pegatina { transform: rotate(7deg); }
+}

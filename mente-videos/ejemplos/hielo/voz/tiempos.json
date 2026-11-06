@@ -1,0 +1,853 @@
+{
+ "firma": "4e7455eb460d3283",
+ "motor": "elevenlabs",
+ "duracion": 43.42,
+ "frases": [
+  {
+   "n": 1,
+   "texto": "¿Por qué el hielo flota, si es agua?",
+   "inicio": 0,
+   "fin": 2.29,
+   "palabras": [
+    {
+     "texto": "¿Por",
+     "destacada": false,
+     "inicio": 0,
+     "fin": 0.21
+    },
+    {
+     "texto": "qué",
+     "destacada": false,
+     "inicio": 0.28,
+     "fin": 0.38
+    },
+    {
+     "texto": "el",
+     "destacada": false,
+     "inicio": 0.41,
+     "fin": 0.48
+    },
+    {
+     "texto": "hielo",
+     "destacada": true,
+     "inicio": 0.53,
+     "fin": 0.77
+    },
+    {
+     "texto": "flota,",
+     "destacada": false,
+     "inicio": 0.84,
+     "fin": 1.36
+    },
+    {
+     "texto": "si",
+     "destacada": false,
+     "inicio": 1.44,
+     "fin": 1.59
+    },
+    {
+     "texto": "es",
+     "destacada": false,
+     "inicio": 1.65,
+     "fin": 1.73
+    },
+    {
+     "texto": "agua?",
+     "destacada": false,
+     "inicio": 1.81,
+     "fin": 2.29
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "texto": "Casi todo lo sólido se hunde en su propio líquido.",
+   "inicio": 2.53,
+   "fin": 5.48,
+   "palabras": [
+    {
+     "texto": "Casi",
+     "destacada": false,
+     "inicio": 2.53,
+     "fin": 2.8
+    },
+    {
+     "texto": "todo",
+     "destacada": false,
+     "inicio": 2.86,
+     "fin": 3.07
+    },
+    {
+     "texto": "lo",
+     "destacada": false,
+     "inicio": 3.11,
+     "fin": 3.19
+    },
+    {
+     "texto": "sólido",
+     "destacada": false,
+     "inicio": 3.25,
+     "fin": 3.61
+    },
+    {
+     "texto": "se",
+     "destacada": false,
+     "inicio": 3.68,
+     "fin": 3.76
+    },
+    {
+     "texto": "hunde",
+     "destacada": false,
+     "inicio": 3.8,
+     "fin": 4.1
+    },
+    {
+     "texto": "en",
+     "destacada": false,
+     "inicio": 4.12,
+     "fin": 4.18
+    },
+    {
+     "texto": "su",
+     "destacada": false,
+     "inicio": 4.24,
+     "fin": 4.34
+    },
+    {
+     "texto": "propio",
+     "destacada": false,
+     "inicio": 4.41,
+     "fin": 4.82
+    },
+    {
+     "texto": "líquido.",
+     "destacada": false,
+     "inicio": 4.88,
+     "fin": 5.48
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "texto": "Un trozo de cera cae al fondo de la cera derretida.",
+   "inicio": 5.81,
+   "fin": 8.82,
+   "palabras": [
+    {
+     "texto": "Un",
+     "destacada": false,
+     "inicio": 5.81,
+     "fin": 5.97
+    },
+    {
+     "texto": "trozo",
+     "destacada": false,
+     "inicio": 6.03,
+     "fin": 6.29
+    },
+    {
+     "texto": "de",
+     "destacada": false,
+     "inicio": 6.35,
+     "fin": 6.42
+    },
+    {
+     "texto": "cera",
+     "destacada": true,
+     "inicio": 6.47,
+     "fin": 6.72
+    },
+    {
+     "texto": "cae",
+     "destacada": false,
+     "inicio": 6.79,
+     "fin": 7
+    },
+    {
+     "texto": "al",
+     "destacada": false,
+     "inicio": 7.02,
+     "fin": 7.09
+    },
+    {
+     "texto": "fondo",
+     "destacada": false,
+     "inicio": 7.16,
+     "fin": 7.48
+    },
+    {
+     "texto": "de",
+     "destacada": false,
+     "inicio": 7.54,
+     "fin": 7.59
+    },
+    {
+     "texto": "la",
+     "destacada": false,
+     "inicio": 7.63,
+     "fin": 7.71
+    },
+    {
+     "texto": "cera",
+     "destacada": false,
+     "inicio": 7.74,
+     "fin": 8
+    },
+    {
+     "texto": "derretida.",
+     "destacada": false,
+     "inicio": 8.06,
+     "fin": 8.82
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "texto": "Pero el agua hace algo raro.",
+   "inicio": 9.03,
+   "fin": 11.11,
+   "palabras": [
+    {
+     "texto": "Pero",
+     "destacada": false,
+     "inicio": 9.03,
+     "fin": 9.28
+    },
+    {
+     "texto": "el",
+     "destacada": false,
+     "inicio": 9.3,
+     "fin": 9.36
+    },
+    {
+     "texto": "agua",
+     "destacada": false,
+     "inicio": 9.47,
+     "fin": 9.79
+    },
+    {
+     "texto": "hace",
+     "destacada": false,
+     "inicio": 9.86,
+     "fin": 10.26
+    },
+    {
+     "texto": "algo",
+     "destacada": false,
+     "inicio": 10.32,
+     "fin": 10.54
+    },
+    {
+     "texto": "raro.",
+     "destacada": false,
+     "inicio": 10.62,
+     "fin": 11.11
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "texto": "Sus moléculas se mueven sin parar, muy pegadas unas a otras.",
+   "inicio": 11.39,
+   "fin": 15.45,
+   "palabras": [
+    {
+     "texto": "Sus",
+     "destacada": false,
+     "inicio": 11.39,
+     "fin": 11.59
+    },
+    {
+     "texto": "moléculas",
+     "destacada": false,
+     "inicio": 11.65,
+     "fin": 12.17
+    },
+    {
+     "texto": "se",
+     "destacada": false,
+     "inicio": 12.19,
+     "fin": 12.25
+    },
+    {
+     "texto": "mueven",
+     "destacada": false,
+     "inicio": 12.31,
+     "fin": 12.59
+    },
+    {
+     "texto": "sin",
+     "destacada": false,
+     "inicio": 12.63,
+     "fin": 12.75
+    },
+    {
+     "texto": "parar,",
+     "destacada": false,
+     "inicio": 12.81,
+     "fin": 13.31
+    },
+    {
+     "texto": "muy",
+     "destacada": false,
+     "inicio": 13.46,
+     "fin": 13.63
+    },
+    {
+     "texto": "pegadas",
+     "destacada": false,
+     "inicio": 13.69,
+     "fin": 14.2
+    },
+    {
+     "texto": "unas",
+     "destacada": false,
+     "inicio": 14.35,
+     "fin": 14.61
+    },
+    {
+     "texto": "a",
+     "destacada": false,
+     "inicio": 14.69,
+     "fin": 14.71
+    },
+    {
+     "texto": "otras.",
+     "destacada": false,
+     "inicio": 14.8,
+     "fin": 15.45
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "texto": "Al congelarse, se enganchan y forman una red llena de huecos.",
+   "inicio": 15.7,
+   "fin": 19.98,
+   "palabras": [
+    {
+     "texto": "Al",
+     "destacada": false,
+     "inicio": 15.7,
+     "fin": 15.82
+    },
+    {
+     "texto": "congelarse,",
+     "destacada": false,
+     "inicio": 15.88,
+     "fin": 16.66
+    },
+    {
+     "texto": "se",
+     "destacada": false,
+     "inicio": 16.73,
+     "fin": 16.83
+    },
+    {
+     "texto": "enganchan",
+     "destacada": false,
+     "inicio": 16.86,
+     "fin": 17.43
+    },
+    {
+     "texto": "y",
+     "destacada": false,
+     "inicio": 17.52,
+     "fin": 17.58
+    },
+    {
+     "texto": "forman",
+     "destacada": false,
+     "inicio": 17.69,
+     "fin": 18.05
+    },
+    {
+     "texto": "una",
+     "destacada": false,
+     "inicio": 18.12,
+     "fin": 18.27
+    },
+    {
+     "texto": "red",
+     "destacada": true,
+     "inicio": 18.37,
+     "fin": 18.6
+    },
+    {
+     "texto": "llena",
+     "destacada": false,
+     "inicio": 18.68,
+     "fin": 19.1
+    },
+    {
+     "texto": "de",
+     "destacada": false,
+     "inicio": 19.16,
+     "fin": 19.25
+    },
+    {
+     "texto": "huecos.",
+     "destacada": false,
+     "inicio": 19.28,
+     "fin": 19.98
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "texto": "El mismo peso ocupa ahora un nueve por ciento más de sitio.",
+   "inicio": 20.22,
+   "fin": 24.36,
+   "palabras": [
+    {
+     "texto": "El",
+     "destacada": false,
+     "inicio": 20.22,
+     "fin": 20.4
+    },
+    {
+     "texto": "mismo",
+     "destacada": false,
+     "inicio": 20.47,
+     "fin": 20.81
+    },
+    {
+     "texto": "peso",
+     "destacada": false,
+     "inicio": 20.86,
+     "fin": 21.26
+    },
+    {
+     "texto": "ocupa",
+     "destacada": false,
+     "inicio": 21.28,
+     "fin": 21.69
+    },
+    {
+     "texto": "ahora",
+     "destacada": false,
+     "inicio": 21.71,
+     "fin": 22.11
+    },
+    {
+     "texto": "un",
+     "destacada": false,
+     "inicio": 22.23,
+     "fin": 22.4
+    },
+    {
+     "texto": "nueve",
+     "destacada": false,
+     "inicio": 22.42,
+     "fin": 22.66
+    },
+    {
+     "texto": "por",
+     "destacada": false,
+     "inicio": 22.71,
+     "fin": 22.84
+    },
+    {
+     "texto": "ciento",
+     "destacada": false,
+     "inicio": 22.9,
+     "fin": 23.32
+    },
+    {
+     "texto": "más",
+     "destacada": false,
+     "inicio": 23.42,
+     "fin": 23.66
+    },
+    {
+     "texto": "de",
+     "destacada": false,
+     "inicio": 23.7,
+     "fin": 23.77
+    },
+    {
+     "texto": "sitio.",
+     "destacada": false,
+     "inicio": 23.82,
+     "fin": 24.36
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "texto": "Por eso el hielo es más ligero que el agua, y sube.",
+   "inicio": 24.53,
+   "fin": 27.59,
+   "palabras": [
+    {
+     "texto": "Por",
+     "destacada": false,
+     "inicio": 24.53,
+     "fin": 24.73
+    },
+    {
+     "texto": "eso",
+     "destacada": false,
+     "inicio": 24.79,
+     "fin": 24.93
+    },
+    {
+     "texto": "el",
+     "destacada": false,
+     "inicio": 24.95,
+     "fin": 25.01
+    },
+    {
+     "texto": "hielo",
+     "destacada": false,
+     "inicio": 25.05,
+     "fin": 25.31
+    },
+    {
+     "texto": "es",
+     "destacada": false,
+     "inicio": 25.33,
+     "fin": 25.38
+    },
+    {
+     "texto": "más",
+     "destacada": false,
+     "inicio": 25.44,
+     "fin": 25.6
+    },
+    {
+     "texto": "ligero",
+     "destacada": true,
+     "inicio": 25.65,
+     "fin": 26.04
+    },
+    {
+     "texto": "que",
+     "destacada": false,
+     "inicio": 26.09,
+     "fin": 26.18
+    },
+    {
+     "texto": "el",
+     "destacada": false,
+     "inicio": 26.2,
+     "fin": 26.26
+    },
+    {
+     "texto": "agua,",
+     "destacada": false,
+     "inicio": 26.38,
+     "fin": 26.74
+    },
+    {
+     "texto": "y",
+     "destacada": false,
+     "inicio": 26.8,
+     "fin": 26.88
+    },
+    {
+     "texto": "sube.",
+     "destacada": false,
+     "inicio": 26.99,
+     "fin": 27.59
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "texto": "Asoma solo un poquito: casi todo se queda debajo.",
+   "inicio": 27.83,
+   "fin": 31.18,
+   "palabras": [
+    {
+     "texto": "Asoma",
+     "destacada": false,
+     "inicio": 27.83,
+     "fin": 28.18
+    },
+    {
+     "texto": "solo",
+     "destacada": false,
+     "inicio": 28.24,
+     "fin": 28.44
+    },
+    {
+     "texto": "un",
+     "destacada": false,
+     "inicio": 28.47,
+     "fin": 28.51
+    },
+    {
+     "texto": "poquito:",
+     "destacada": false,
+     "inicio": 28.56,
+     "fin": 29.22
+    },
+    {
+     "texto": "casi",
+     "destacada": false,
+     "inicio": 29.4,
+     "fin": 29.64
+    },
+    {
+     "texto": "todo",
+     "destacada": false,
+     "inicio": 29.7,
+     "fin": 29.99
+    },
+    {
+     "texto": "se",
+     "destacada": false,
+     "inicio": 30.05,
+     "fin": 30.13
+    },
+    {
+     "texto": "queda",
+     "destacada": false,
+     "inicio": 30.2,
+     "fin": 30.46
+    },
+    {
+     "texto": "debajo.",
+     "destacada": false,
+     "inicio": 30.52,
+     "fin": 31.18
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "texto": "Y eso salva vidas.",
+   "inicio": 31.39,
+   "fin": 33.12,
+   "palabras": [
+    {
+     "texto": "Y",
+     "destacada": false,
+     "inicio": 31.39,
+     "fin": 31.51
+    },
+    {
+     "texto": "eso",
+     "destacada": false,
+     "inicio": 31.63,
+     "fin": 31.95
+    },
+    {
+     "texto": "salva",
+     "destacada": false,
+     "inicio": 32.07,
+     "fin": 32.4
+    },
+    {
+     "texto": "vidas.",
+     "destacada": false,
+     "inicio": 32.46,
+     "fin": 33.12
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "texto": "Los lagos se hielan por arriba, y esa tapa deja a los peces vivos debajo.",
+   "inicio": 33.4,
+   "fin": 38.03,
+   "palabras": [
+    {
+     "texto": "Los",
+     "destacada": false,
+     "inicio": 33.4,
+     "fin": 33.58
+    },
+    {
+     "texto": "lagos",
+     "destacada": false,
+     "inicio": 33.66,
+     "fin": 33.94
+    },
+    {
+     "texto": "se",
+     "destacada": false,
+     "inicio": 33.96,
+     "fin": 34.03
+    },
+    {
+     "texto": "hielan",
+     "destacada": false,
+     "inicio": 34.08,
+     "fin": 34.39
+    },
+    {
+     "texto": "por",
+     "destacada": false,
+     "inicio": 34.45,
+     "fin": 34.61
+    },
+    {
+     "texto": "arriba,",
+     "destacada": false,
+     "inicio": 34.66,
+     "fin": 35.22
+    },
+    {
+     "texto": "y",
+     "destacada": false,
+     "inicio": 35.47,
+     "fin": 35.53
+    },
+    {
+     "texto": "esa",
+     "destacada": false,
+     "inicio": 35.58,
+     "fin": 35.7
+    },
+    {
+     "texto": "tapa",
+     "destacada": false,
+     "inicio": 35.75,
+     "fin": 36.01
+    },
+    {
+     "texto": "deja",
+     "destacada": false,
+     "inicio": 36.07,
+     "fin": 36.32
+    },
+    {
+     "texto": "a",
+     "destacada": false,
+     "inicio": 36.34,
+     "fin": 36.36
+    },
+    {
+     "texto": "los",
+     "destacada": false,
+     "inicio": 36.39,
+     "fin": 36.51
+    },
+    {
+     "texto": "peces",
+     "destacada": true,
+     "inicio": 36.57,
+     "fin": 36.92
+    },
+    {
+     "texto": "vivos",
+     "destacada": false,
+     "inicio": 36.98,
+     "fin": 37.31
+    },
+    {
+     "texto": "debajo.",
+     "destacada": false,
+     "inicio": 37.37,
+     "fin": 38.03
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "texto": "Así que cada cubito de tu vaso hace lo mismo que protege a un lago entero.",
+   "inicio": 38.24,
+   "fin": 42.72,
+   "palabras": [
+    {
+     "texto": "Así",
+     "destacada": false,
+     "inicio": 38.24,
+     "fin": 38.52
+    },
+    {
+     "texto": "que",
+     "destacada": false,
+     "inicio": 38.59,
+     "fin": 38.67
+    },
+    {
+     "texto": "cada",
+     "destacada": false,
+     "inicio": 38.74,
+     "fin": 38.97
+    },
+    {
+     "texto": "cubito",
+     "destacada": false,
+     "inicio": 39.02,
+     "fin": 39.44
+    },
+    {
+     "texto": "de",
+     "destacada": false,
+     "inicio": 39.5,
+     "fin": 39.56
+    },
+    {
+     "texto": "tu",
+     "destacada": false,
+     "inicio": 39.6,
+     "fin": 39.69
+    },
+    {
+     "texto": "vaso",
+     "destacada": false,
+     "inicio": 39.75,
+     "fin": 40.08
+    },
+    {
+     "texto": "hace",
+     "destacada": false,
+     "inicio": 40.12,
+     "fin": 40.29
+    },
+    {
+     "texto": "lo",
+     "destacada": false,
+     "inicio": 40.34,
+     "fin": 40.42
+    },
+    {
+     "texto": "mismo",
+     "destacada": false,
+     "inicio": 40.48,
+     "fin": 40.81
+    },
+    {
+     "texto": "que",
+     "destacada": false,
+     "inicio": 40.87,
+     "fin": 40.94
+    },
+    {
+     "texto": "protege",
+     "destacada": false,
+     "inicio": 40.99,
+     "fin": 41.45
+    },
+    {
+     "texto": "a",
+     "destacada": false,
+     "inicio": 41.47,
+     "fin": 41.49
+    },
+    {
+     "texto": "un",
+     "destacada": false,
+     "inicio": 41.54,
+     "fin": 41.61
+    },
+    {
+     "texto": "lago",
+     "destacada": false,
+     "inicio": 41.69,
+     "fin": 41.95
+    },
+    {
+     "texto": "entero.",
+     "destacada": false,
+     "inicio": 41.98,
+     "fin": 42.72
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mente-videos</title>
+<!-- Letras: Bricolage Grotesque y Atkinson Hyperlegible, bajo SIL Open Font License 1.1. Iconos: Simple Icons, CC0. -->
+<style>/*ESTILOS*/</style>
+</head>
+<body class="bg-sol font-texto text-tinta text-lg leading-relaxed antialiased">
+
+<header class="overflow-hidden">
+  <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 pt-8 pb-16 md:grid-cols-[1.25fr_.75fr] md:px-8 md:pt-8 md:pb-16">
+    <div>
+      <p class="flex items-center gap-2 font-titulo text-xl font-bold">
+        <svg viewBox="0 0 40 34" class="h-7 w-8" aria-hidden="true"><path d="M8 3h24a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H19l-9 7 1-7H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><circle cx="13" cy="14" r="2.3" fill="currentColor"/><circle cx="20" cy="14" r="2.3" fill="currentColor"/><circle cx="27" cy="14" r="2.3" fill="currentColor"/></svg>
+        <span id="marca"></span>
+      </p>
+      <h1 class="mt-9 font-titulo text-[clamp(3rem,7.4vw,5.6rem)] leading-[.94] font-extrabold tracking-tight md:mt-10">¿Y si tu próxima idea se dibujara sola?</h1>
+      <p class="mt-6 max-w-xl text-xl md:leading-snug">Cuéntale una idea a Claude. mente-videos escribe el guion, pone la voz, anima las escenas y te entrega el vídeo con su portada.</p>
+      <a href="#instalar" class="mt-7 inline-block rounded-full bg-tinta px-8 py-4 font-titulo text-xl font-bold text-sol transition-transform hover:-translate-y-0.5">Ver cómo se instala</a>
+    </div>
+
+    <svg viewBox="0 0 450 700" class="mx-auto w-full max-w-[21rem] overflow-visible md:max-w-[23rem]" role="img" aria-label="Un móvil en el que se dibuja un vídeo: un cubo de hielo cae en un vaso de agua y flota.">
+      <defs><clipPath id="pantalla"><rect x="42" y="30" width="310" height="630" rx="34"/></clipPath></defs>
+      <g transform="rotate(3 197 345)">
+        <rect x="42" y="42" width="310" height="630" rx="44" fill="#101a5c" opacity=".22" transform="translate(14 8)"/>
+        <rect x="30" y="18" width="334" height="654" rx="46" fill="#101a5c"/>
+        <g clip-path="url(#pantalla)">
+          <rect x="42" y="30" width="310" height="630" fill="#2233d8"/>
+          <g fill="#fff6e0" opacity=".85"><circle cx="196" cy="96" r="3"/><circle cx="302" cy="72" r="4"/><circle cx="318" cy="182" r="2.5"/><circle cx="74" cy="238" r="2.5"/><circle cx="210" cy="118" r="2"/></g>
+          <circle cx="118" cy="150" r="42" fill="#ffcb1f"/>
+          <rect x="42" y="540" width="310" height="120" fill="#101a5c"/>
+          <path class="agua" d="M106 304l12 236h158l12-236Z" fill="#5ff0b0"/>
+          <ellipse class="onda" cx="197" cy="304" rx="84" ry="13" fill="none" stroke="#fff6e0" stroke-width="5"/>
+          <g class="cubo">
+            <path d="M152 302l45-23 45 23v52l-45 24-45-24Z" fill="#fff6e0" stroke="#101a5c" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M152 302l45 23 45-23M197 325v53" fill="none" stroke="#101a5c" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M166 322l18 9v20" fill="none" stroke="#5ff0b0" stroke-width="6" stroke-linecap="round"/>
+          </g>
+          <path class="agua" d="M106 304l12 236h158l12-236Z" fill="#5ff0b0" fill-opacity=".55"/>
+          <path class="traza" pathLength="1" d="M104 262l14 278h158l14-278" fill="none" stroke="#fff6e0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+          <g class="subtitulo">
+            <rect x="66" y="570" width="262" height="60" rx="14" fill="#ffcb1f"/>
+            <text x="197" y="610" text-anchor="middle" font-family="Bricolage Grotesque Variable, Arial Black, sans-serif" font-size="29" font-weight="800" fill="#101a5c">¿Por qué flota?</text>
+          </g>
+        </g>
+        <rect x="150" y="38" width="94" height="20" rx="10" fill="#101a5c"/>
+      </g>
+      <g transform="translate(-36 10)"><g class="pegatina">
+        <path d="M250 8h142a20 20 0 0 1 20 20v66a20 20 0 0 1-20 20h-92l-34 28 6-28h-22a20 20 0 0 1-20-20V28a20 20 0 0 1 20-20Z" fill="#ff6f7d" stroke="#101a5c" stroke-width="6" stroke-linejoin="round"/>
+        <text x="321" y="77" text-anchor="middle" font-family="Bricolage Grotesque Variable, Arial Black, sans-serif" font-size="44" font-weight="800" fill="#101a5c">¿Y si…?</text>
+      </g></g>
+    </svg>
+  </div>
+</header>
+
+<main>
+  <section id="instalar" class="scroll-mt-4 bg-mar text-papel">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-16 md:grid-cols-[7.5rem_1fr] md:gap-10 md:px-8 md:py-24">
+      <span class="font-titulo text-8xl leading-none font-extrabold text-sol md:text-[10rem]" aria-hidden="true">1</span>
+      <div>
+        <h2 class="font-titulo text-4xl leading-tight font-extrabold md:text-6xl">Abre la carpeta en Claude</h2>
+        <ol class="mt-7 max-w-2xl list-decimal space-y-3 pl-6 text-xl marker:font-bold marker:text-sol">
+          <li>Descarga el proyecto en GitHub, con <b>Code</b> y <b>Download ZIP</b>, y descomprímelo.</li>
+          <li>Abre la app de Claude y entra en <b>Code</b>.</li>
+          <li>Elige la carpeta que has descomprimido. Si te pregunta si confías en ella, di que sí.</li>
+        </ol>
+        <p class="mt-6 max-w-2xl text-papel/85">Necesitas una cuenta de Claude con acceso a Claude Code.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-papel">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-16 md:grid-cols-[7.5rem_1fr] md:gap-10 md:px-8 md:py-24">
+      <span class="font-titulo text-8xl leading-none font-extrabold md:text-[10rem] text-mar" aria-hidden="true">2</span>
+      <div>
+        <h2 class="font-titulo text-4xl leading-tight font-extrabold md:text-6xl">Escribe «instálame»</h2>
+        <div class="mt-6 flex max-w-xl items-center gap-3 rounded-2xl bg-tinta p-3 pl-6 text-papel">
+          <code class="min-w-0 flex-1 text-2xl break-words">instálame</code>
+          <button type="button" data-copia class="cursor-pointer rounded-xl bg-sol px-5 py-2.5 font-bold text-tinta">Copiar</button>
+        </div>
+        <p class="mt-6 max-w-2xl text-xl">Claude instala lo que falte en tu ordenador. Acepta los permisos que te pida y responde a sus preguntas:</p>
+        <dl class="mt-8 grid max-w-4xl gap-x-12 gap-y-7 md:grid-cols-2">
+          <div>
+            <dt class="font-titulo text-2xl font-bold">Dónde guardar tus vídeos</dt>
+            <dd class="mt-1">Eliges una carpeta para los vídeos en revisión y otra para los terminados. También puedes aceptar las que te proponga.</dd>
+          </div>
+          <div>
+            <dt class="font-titulo text-2xl font-bold">Qué idioma usar</dt>
+            <dd class="mt-1">Será el idioma de tus guiones, de la voz y de los subtítulos.</dd>
+          </div>
+          <div>
+            <dt class="font-titulo text-2xl font-bold">Cómo es tu estilo</dt>
+            <dd class="mt-1">Cuéntale de qué hablas, para quién, cómo lo cuentas, qué aspecto quieres y cómo cierras tus vídeos.</dd>
+          </div>
+          <div>
+            <dt class="font-titulo text-2xl font-bold">Qué voz quieres</dt>
+            <dd class="mt-1">Elige entre ElevenLabs y la voz de tu ordenador. Te lo explicamos en el siguiente paso.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-menta">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-16 md:grid-cols-[7.5rem_1fr] md:gap-10 md:px-8 md:py-24">
+      <span class="font-titulo text-8xl leading-none font-extrabold md:text-[10rem]" aria-hidden="true">3</span>
+      <div>
+        <h2 class="font-titulo text-4xl leading-tight font-extrabold md:text-6xl">Elige tu voz</h2>
+        <p class="mt-3 max-w-2xl text-xl">La voz es lo primero que se nota en un vídeo. Te recomendamos ElevenLabs.</p>
+        <div class="mt-8 grid items-start gap-8 lg:grid-cols-[1.45fr_.75fr]">
+          <div class="rounded-[2rem] bg-tinta p-6 text-papel md:p-8">
+            <p class="inline-block rounded-full bg-sol px-4 py-1 font-titulo text-base font-bold text-tinta">Recomendada</p>
+            <h3 class="mt-4 font-titulo text-4xl font-extrabold">ElevenLabs</h3>
+            <svg viewBox="0 0 320 70" preserveAspectRatio="xMinYMid meet" class="mt-3 h-16 w-full" aria-hidden="true"><path d="M2 35c20-34 34-34 52 0s34 30 52 0 30-32 52 0 30 36 52 0 34-30 52 0 28 24 56 0" fill="none" stroke="#ff6f7d" stroke-width="7" stroke-linecap="round"/></svg>
+            <ul class="mt-4 list-disc space-y-2 pl-5 marker:text-sol">
+              <li>Suena natural, como una persona contándote algo.</li>
+              <li>Marca el segundo exacto de cada palabra, así que los subtítulos y las animaciones van a tiempo.</li>
+              <li>Puedes elegir entre muchas voces y escucharlas antes.</li>
+            </ul>
+            <h4 class="mt-7 font-titulo text-xl font-bold text-sol">Cómo se configura</h4>
+            <ol class="mt-2 list-decimal space-y-2 pl-5 marker:font-bold marker:text-sol">
+              <li>Crea tu cuenta en <a class="font-bold underline underline-offset-4" href="https://elevenlabs.io" target="_blank" rel="noreferrer">elevenlabs.io</a>.</li>
+              <li>Dile a Claude que quieres ElevenLabs. Se abrirá una web en tu ordenador.</li>
+              <li>Sigue sus pasos para crear tu clave y pégala ahí, no en el chat.</li>
+              <li>Claude te enseña las voces y te recomienda una que encaje con tu estilo.</li>
+            </ol>
+            <p class="mt-6 text-base text-papel/85">El uso se cobra en tu cuenta de ElevenLabs. Como referencia, un vídeo de 43 segundos gastó unos 650 caracteres. Consulta <a class="font-bold underline underline-offset-4" href="https://elevenlabs.io/pricing" target="_blank" rel="noreferrer">sus planes</a> antes de empezar.</p>
+          </div>
+          <div class="lg:pt-6">
+            <h3 class="font-titulo text-2xl font-bold">Voz de tu ordenador</h3>
+            <svg viewBox="0 0 320 70" preserveAspectRatio="xMinYMid meet" class="mt-3 h-14 w-full" aria-hidden="true"><path d="M2 35h28v-16h28v32h28V27h28v18h28V12h28v46h28V24h28v24h28V35h28" fill="none" stroke="#101a5c" stroke-width="6" stroke-linejoin="round"/></svg>
+            <p class="mt-3">Gratis y sin crear ninguna cuenta, pero suena robótica y los tiempos de cada palabra son aproximados.</p>
+            <p class="mt-3">Sirve para hacer una primera prueba. Puedes cambiar a ElevenLabs cuando quieras: solo díselo a Claude.</p>
+          </div>
+        </div>
+        <p class="mt-8 max-w-3xl border-l-4 border-tinta pl-4">Tu clave se guarda solo en un archivo <code>.env</code> de tu ordenador. No la compartas con nadie.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-sol">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-16 md:grid-cols-[7.5rem_1fr] md:gap-10 md:px-8 md:py-24">
+      <span class="font-titulo text-8xl leading-none font-extrabold md:text-[10rem] text-mar" aria-hidden="true">4</span>
+      <div>
+        <h2 class="font-titulo text-4xl leading-tight font-extrabold md:text-6xl">Trae tus assets</h2>
+        <p class="mt-3 max-w-2xl text-xl">Claude crea una carpeta con cuatro apartados. Lo que pongas ahí se puede usar en tus vídeos. Es opcional, pero hace que se vean más tuyos.</p>
+        <dl class="mt-8 grid max-w-4xl gap-x-12 gap-y-6 sm:grid-cols-2">
+          <div class="flex gap-4">
+            <svg viewBox="0 0 32 32" class="h-10 w-10 shrink-0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 26 13 5l9 21M7.5 18h11M27 13v13"/></svg>
+            <div><dt class="font-titulo text-2xl font-bold">letras</dt><dd>Tus tipografías, en <code>.ttf</code> u <code>.otf</code>.</dd></div>
+          </div>
+          <div class="flex gap-4">
+            <svg viewBox="0 0 32 32" class="h-10 w-10 shrink-0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 3 7 18h8l-2 11 12-16h-9z"/></svg>
+            <div><dt class="font-titulo text-2xl font-bold">efectos</dt><dd>Sonidos cortos: golpes, clics, aire.</dd></div>
+          </div>
+          <div class="flex gap-4">
+            <svg viewBox="0 0 32 32" class="h-10 w-10 shrink-0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 24V7l15-3v17"/><circle cx="8" cy="24" r="4"/><circle cx="23" cy="21" r="4"/></svg>
+            <div><dt class="font-titulo text-2xl font-bold">audios</dt><dd>Música o audios largos.</dd></div>
+          </div>
+          <div class="flex gap-4">
+            <svg viewBox="0 0 32 32" class="h-10 w-10 shrink-0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="24" height="22" rx="3"/><circle cx="11" cy="12" r="2.5"/><path d="m5 24 8-7 5 4 4-3 6 5"/></svg>
+            <div><dt class="font-titulo text-2xl font-bold">texturas</dt><dd>Imágenes, fondos y fotos.</dd></div>
+          </div>
+        </dl>
+        <p class="mt-8 max-w-2xl">Usa solo material que tengas permiso para usar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-coral">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-16 md:grid-cols-[7.5rem_1fr] md:gap-10 md:px-8 md:py-24">
+      <span class="font-titulo text-8xl leading-none font-extrabold md:text-[10rem]" aria-hidden="true">5</span>
+      <div>
+        <h2 class="font-titulo text-4xl leading-tight font-extrabold md:text-6xl">Pide tu primer vídeo</h2>
+        <p class="mt-3 max-w-2xl text-xl">Abre una conversación nueva en Claude Code y escribe tu idea:</p>
+        <div class="mt-6 flex flex-col gap-4 rounded-3xl bg-tinta p-5 text-papel sm:flex-row sm:items-center sm:pl-7">
+          <code class="min-w-0 flex-1 text-xl break-words md:text-2xl">/mente-videos un vídeo sobre por qué el hielo flota</code>
+          <button type="button" data-copia class="cursor-pointer self-start rounded-xl bg-sol px-5 py-2.5 font-bold text-tinta sm:self-auto">Copiar</button>
+        </div>
+        <ul class="mt-6 max-w-2xl list-disc space-y-2 pl-6 text-xl">
+          <li>Claude investiga el tema y te enseña el guion antes de seguir.</li>
+          <li>Después te enseña un borrador para que digas qué cambiar.</li>
+          <li>El vídeo terminado queda en tu carpeta de finales, con su portada y el texto para publicar.</li>
+          <li>Lo que apruebes y lo que rechaces irá afinando tu estilo.</li>
+        </ul>
+        <p class="mt-5 max-w-2xl">Un vídeo puede llevar un rato. Deja la app abierta mientras trabaja. Nada se publica sin ti.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-tinta text-papel">
+  <div class="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-20">
+    <h2 class="font-titulo text-4xl leading-tight font-extrabold md:text-6xl" id="invitacion"></h2>
+    <ul id="cuentas" class="mt-10 grid gap-x-10 sm:grid-cols-2"></ul>
+  </div>
+</footer>
+
+<script>
+  // Edita aquí tu información. Las cuentas con el campo url vacío no se muestran.
+  const MARCA = {
+    nombre: "Mentes Hipotéticas",
+    invitacion: "Enséñanos qué creas con ella",
+    cuentas: [
+      { red: "Instagram", usuario: "@menteshipoteticas", url: "https://www.instagram.com/menteshipoteticas/" },
+      { red: "TikTok", usuario: "@mentehipotetica", url: "https://www.tiktok.com/@mentehipotetica" },
+      { red: "YouTube", usuario: "@MentesHipoteticas", url: "https://www.youtube.com/@MentesHipoteticas" },
+      { red: "Facebook", usuario: "Mentes Hipotéticas", url: "https://www.facebook.com/Menteshipoteticas" },
+    ],
+  };
+  const ICONOS = /*ICONOS*/;
+
+  document.getElementById("marca").textContent = MARCA.nombre;
+  document.getElementById("invitacion").textContent = MARCA.invitacion;
+  const lista = document.getElementById("cuentas");
+  for (const c of MARCA.cuentas.filter((x) => x.url)) {
+    const li = document.createElement("li"), a = document.createElement("a");
+    li.className = "border-b-2 border-papel/25";
+    a.className = "flex items-center gap-4 py-5 transition-colors hover:text-sol";
+    a.href = c.url; a.target = "_blank"; a.rel = "noreferrer";
+    if (ICONOS[c.red]) {
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg"), path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      svg.setAttribute("viewBox", "0 0 24 24"); svg.setAttribute("class", "h-8 w-8 shrink-0 fill-current"); svg.setAttribute("aria-hidden", "true");
+      path.setAttribute("d", ICONOS[c.red]); svg.append(path); a.append(svg);
+    }
+    const texto = document.createElement("span");
+    texto.className = "min-w-0";
+    const red = document.createElement("span"), usuario = document.createElement("span");
+    red.className = "block text-base text-papel/75"; red.textContent = c.red;
+    usuario.className = "block font-titulo text-2xl font-bold break-words"; usuario.textContent = c.usuario;
+    texto.append(red, usuario); a.append(texto); li.append(a); lista.append(li);
+  }
+
+  document.querySelectorAll("[data-copia]").forEach((b) => b.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(b.previousElementSibling.textContent);
+      b.textContent = "Copiado";
+    } catch { b.textContent = "Selecciónalo"; }
+    setTimeout(() => { b.textContent = "Copiar"; }, 1500);
+  }));
+</script>
+</body>
+</html>

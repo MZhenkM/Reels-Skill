@@ -1,0 +1,36 @@
+// Cada efecto sale de un momento de la voz: si el guion cambia, el sonido lo sigue.
+export default ({ voz }) => {
+  const f = (n) => voz.frase(n);
+  return [
+    { efecto: "aire", t: 0, db: -15 },
+    { efecto: "golpe", t: voz.en("hielo"), db: -7 },
+    { efecto: "aire", t: f(2).en("hunde") - 0.2, db: -17 },
+    { efecto: "golpe", t: f(2).fin, db: -15 },
+    { efecto: "aire", t: f(3).en("cae") - 0.1, db: -17 },
+    { efecto: "golpe", t: f(3).en("fondo") + 0.15, db: -14 },
+    { efecto: "clic", t: f(4).en("hace"), db: -15 },
+    { efecto: "sube", t: f(4).en("raro") - 0.3, db: -12 },
+    { efecto: "clic", t: f(5).en("mueven"), db: -22 },
+    { efecto: "clic", t: f(5).en("parar"), db: -22 },
+    { efecto: "clic", t: f(5).en("pegadas"), db: -22 },
+    { efecto: "aire", t: f(6).en("congelarse"), db: -15 },
+    { efecto: "clic", t: f(6).en("enganchan"), db: -12 },
+    { efecto: "clic", t: f(6).en("enganchan") + 0.16, db: -15 },
+    { efecto: "clic", t: f(6).en("enganchan") + 0.32, db: -15 },
+    { efecto: "sube", t: f(6).en("huecos") - 0.2, db: -16 },
+    { efecto: "golpe", t: f(7).inicio + 0.1, db: -18 },
+    { efecto: "aire", t: f(7).en("ocupa"), db: -16 },
+    { efecto: "clic", t: f(7).en("nueve"), db: -11 },
+    { efecto: "aire", t: f(8).en("hielo"), db: -18 },
+    { efecto: "sube", t: f(8).en("sube") - 0.3, db: -11 },
+    { efecto: "golpe", t: f(8).en("sube") + 0.25, db: -14 },
+    { efecto: "clic", t: f(9).en("casi"), db: -14 },
+    { efecto: "aire", t: f(10).inicio, db: -17 },
+    { efecto: "clic", t: f(10).en("vidas"), db: -14 },
+    { efecto: "aire", t: f(11).en("hielan"), db: -14 },
+    { efecto: "golpe", t: f(11).en("tapa"), db: -9 },
+    { efecto: "sube", t: f(11).en("peces"), db: -16 },
+    { efecto: "aire", t: f(12).inicio, db: -17 },
+    { efecto: "clic", t: f(12).en("lago"), db: -15 },
+  ];
+};

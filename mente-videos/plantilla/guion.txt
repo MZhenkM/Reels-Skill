@@ -1,0 +1,4 @@
+# Una frase por línea. *palabra* la destaca en el subtítulo. [[IA|i a]] se escribe IA y se pronuncia «i a».
+¿Por qué el hielo *flota* si es agua?
+Porque al congelarse, el agua se *expande*.
+Ocupa más sitio con el mismo peso.

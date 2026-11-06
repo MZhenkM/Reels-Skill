@@ -1,0 +1,13 @@
+{
+  "name": "mente-videos-bienvenida",
+  "private": true,
+  "type": "module",
+  "scripts": { "construir": "node construir.mjs" },
+  "devDependencies": {
+    "@fontsource-variable/bricolage-grotesque": "5.2.8",
+    "@fontsource/atkinson-hyperlegible": "5.2.6",
+    "@tailwindcss/cli": "4.1.13",
+    "simple-icons": "15.14.0",
+    "tailwindcss": "4.1.13"
+  }
+}

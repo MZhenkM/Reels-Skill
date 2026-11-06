@@ -1,0 +1,10 @@
+{
+  "name": "mente-videos",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Skill para generar vídeos verticales explicativos dibujados con código.",
+  "engines": { "node": ">=20" },
+  "dependencies": { "@napi-rs/canvas": "0.1.97" }
+}

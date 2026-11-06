@@ -1,0 +1,9 @@
+node_modules/
+package-lock.json
+.env
+.env.*
+!.env.ejemplo
+revisar/
+pagina/salida.css
+.DS_Store
+Thumbs.db
