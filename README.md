@@ -6,7 +6,12 @@ subtítulos, efectos y portada.
 Es un punto de partida: trae el motor y un método básico, pero no un estilo. El estilo lo pones tú. La skill te pregunta
 cómo quieres que sean tus vídeos, recuerda lo que apruebas y guarda tus dibujos en tu propio kit.
 
-[![Portada del vídeo de ejemplo](mente-videos/ejemplos/hielo/final/portada.jpg)](mente-videos/ejemplos/hielo/final/video.mp4)
+<p align="center">
+  <a href="mente-videos/ejemplos/hielo/final/video.mp4"><img src="imagenes/ejemplo-portada.jpg" width="250" alt="Portada del vídeo de ejemplo: ¿Por qué flota el hielo?"></a>
+  <img src="imagenes/ejemplo-moleculas.jpg" width="250" alt="Escena del ejemplo: las moléculas del hielo dejan huecos">
+  <img src="imagenes/ejemplo-lago.jpg" width="250" alt="Escena del ejemplo: peces bajo un lago helado">
+</p>
+<p align="center"><a href="mente-videos/ejemplos/hielo/final/video.mp4">Ver el vídeo de ejemplo</a></p>
 
 ## Instalación
 
@@ -58,6 +63,7 @@ Usa solo material que tengas permiso para usar.
 | `instalar.mjs` | Copia la skill a `~/.claude/skills/` |
 | `BIENVENIDA.html` | La guía de inicio |
 | `pagina/` | El código fuente de la guía |
+| `imagenes/` | Las imágenes de este README |
 
 Para cambiar el diseño de la guía, edita `pagina/fuente.html` y ejecuta `npm install` y `npm run construir` dentro de
 `pagina/`. Tu nombre y tus cuentas se pueden cambiar directamente en el bloque `MARCA`.
