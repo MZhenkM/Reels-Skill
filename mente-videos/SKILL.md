@@ -39,7 +39,9 @@ creador ha puesto en su carpeta y úsalo cuando encaje con el vídeo.
 8. **Añade el sonido** si el creador lo quiere: edita `sonido.mjs` y ejecuta `sonido <proyecto>`. Hay efectos
    (`{ efecto, t, db }`) y música de fondo (`{ musica, db }`), que baja sola cuando habla la voz; `sonido --catalogo` los
    lista. Las escenas también pueden traer su sonido. No puedes oír el resultado, así que pídele que lo escuche.
-9. **Termina.** Edita `portada.mjs` y `post.txt` y ejecuta `render <proyecto>`. Todo queda en su carpeta de finales.
+9. **Termina.** Edita `portada.mjs` y `post.txt`. Mira la portada con `ver <proyecto> portada`: el título no debe tapar
+   lo importante del dibujo y debe quedar entre y 240 e y 1680, porque los perfiles la recortan. Ejecuta
+   `render <proyecto>`. Todo queda en su carpeta de finales.
 
 ## Lo que aprende
 

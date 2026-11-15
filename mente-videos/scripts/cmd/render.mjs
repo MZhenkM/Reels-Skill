@@ -5,30 +5,14 @@ import { cpus } from "node:os";
 import { basename, dirname, join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { Worker } from "node:worker_threads";
-import { createCanvas } from "@napi-rs/canvas";
-import { H, W, carpetaDe, ffmpeg, leerAjustes, leerArgs } from "../lib/base.mjs";
-import { dibujar, preparar } from "../lib/cuadro.mjs";
+import { carpetaDe, ffmpeg, leerAjustes, leerArgs } from "../lib/base.mjs";
+import { leerPortada, pintarPortada } from "../lib/portada.mjs";
 import { abrir } from "../lib/proyecto.mjs";
 
 async function portada(proy, destino) {
-  const f = join(proy.dir, "portada.mjs");
-  if (!existsSync(f)) return console.log("Sin portada.mjs: no hay portada.");
-  const { default: p } = await import(pathToFileURL(f).href), a = leerAjustes(), est = preparar(proy);
-  const lienzo = createCanvas(W, H), g = lienzo.getContext("2d");
-  g.drawImage(dibujar(proy, est, p.t, { conSubtitulos: false }), 0, 0);
-  g.font = `800 112px ${a.letra}`;
-  g.textAlign = "center";
-  g.textBaseline = "middle";
-  g.lineJoin = "round";
-  p.titulo.forEach((linea, i) => {
-    const y = 960 + (i - (p.titulo.length - 1) / 2) * 128;
-    g.strokeStyle = "rgba(0,0,0,.9)";
-    g.lineWidth = 20;
-    g.strokeText(linea, 540, y);
-    g.fillStyle = i === p.resalta ? a.color_acento : a.color_texto;
-    g.fillText(linea, 540, y);
-  });
-  writeFileSync(destino, await lienzo.encode("jpeg", 92));
+  const p = await leerPortada(proy.dir);
+  if (!p) return console.log("Sin portada.mjs: no hay portada.");
+  writeFileSync(destino, await (await pintarPortada(proy, p)).encode("jpeg", 92));
   console.log(destino);
 }
 

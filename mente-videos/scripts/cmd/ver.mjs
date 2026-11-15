@@ -1,10 +1,11 @@
 // Dibuja fotogramas para mirarlos: uno grande, o una hoja de miniaturas.
-//   ver P 12.4 | ver P 3-6 [--cada 0.25] | ver P frase 5 | ver P escenas | ver P   (todo el vídeo)
+//   ver P 12.4 | ver P 3-6 [--cada 0.25] | ver P frase 5 | ver P escenas | ver P portada | ver P   (todo el vídeo)
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { createCanvas } from "@napi-rs/canvas";
 import { carpetaDe, fallo, leerArgs } from "../lib/base.mjs";
 import { dibujar, preparar } from "../lib/cuadro.mjs";
+import { leerPortada, pintarPortada } from "../lib/portada.mjs";
 import { abrir } from "../lib/proyecto.mjs";
 
 const COLS = 6, TW = 270, TH = 480;
@@ -27,6 +28,15 @@ function instantes(proy, que, op) {
 export default async function ver(args) {
   const { sueltos, op } = leerArgs(args);
   const dir = carpetaDe(sueltos[0]), proy = await abrir(dir), est = preparar(proy);
+  if (sueltos[1] === "portada") {
+    const p = await leerPortada(dir);
+    if (!p) fallo("Este proyecto no tiene portada.mjs.");
+    const salida = join(dir, "revisar", "portada.jpg");
+    mkdirSync(join(dir, "revisar"), { recursive: true });
+    writeFileSync(salida, await (await pintarPortada(proy, p)).encode("jpeg", 90));
+    console.log(salida);
+    return;
+  }
   const { nombre, ts, grande } = instantes(proy, sueltos.slice(1), op);
   const carpeta = join(dir, "revisar"), salida = join(carpeta, `${nombre}.jpg`);
   mkdirSync(carpeta, { recursive: true });
