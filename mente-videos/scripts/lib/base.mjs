@@ -36,6 +36,7 @@ const INICIALES = {
   color_texto: "#ffffff",
   color_acento: "#ffffff",
   subtitulos: "abajo", // abajo | arriba | no
+  acabado: "", // capas sobre todo el vídeo, separadas por comas: grano, vineta, papel
   carpeta_revision: "", // proyectos y borradores; vacío: ./mente-videos
   carpeta_finales: "", // vídeos terminados; vacío: <proyecto>/final
   carpeta_assets: "", // letras, efectos, audios y texturas del creador

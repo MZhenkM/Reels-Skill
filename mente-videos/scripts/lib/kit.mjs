@@ -34,6 +34,25 @@ export function azar(semilla = 1) {
   };
 }
 
+// --- Cámara 2D: se aplican con g al principio de dibujar(), antes de pintar lo que deba moverse.
+// Sacudida que empieza en t0 y se apaga en `dura` segundos: const s = k.temblor(t, voz.en("choca")); g.translate(s.x, s.y)
+export function temblor(t, t0, { fuerza = 28, dura = 0.45, semilla = 1 } = {}) {
+  const e = t - t0;
+  if (e < 0 || e > dura) return { x: 0, y: 0, giro: 0 };
+  const r = azar(semilla), f = fuerza * (1 - e / dura) ** 2, p = [r(), r(), r()].map((v) => v * 100);
+  const onda = (fase) => Math.sin(e * 61 + fase) * 0.6 + Math.sin(e * 37 + fase * 1.7) * 0.4;
+  return { x: f * onda(p[0]), y: f * onda(p[1]), giro: (f / 900) * onda(p[2]) };
+}
+
+// Acercamiento lento hacia un punto (efecto Ken Burns), para que una imagen fija no se vea muerta.
+// u va de 0 a 1 (usa info.u). Escala de `desde` a `hasta` alrededor de (x, y).
+export function acercar(g, u, { desde = 1, hasta = 1.1, x = 540, y = 960 } = {}) {
+  const s = mezcla(desde, hasta, lim(u));
+  g.translate(x, y);
+  g.scale(s, s);
+  g.translate(-x, -y);
+}
+
 // --- Lienzos e imágenes
 export const lienzo = (w, h) => createCanvas(w, h);
 export const cargar = (ruta) => loadImage(ruta);

@@ -36,8 +36,9 @@ creador ha puesto en su carpeta y úsalo cuando encaje con el vídeo.
 6. **Mira lo que haces.** Tras cada cambio usa `ver <proyecto> 12.4`, `ver <proyecto> frase 3` o `ver <proyecto> escenas`
    y abre la imagen. Antes de terminar, ejecuta `revisar <proyecto>` y arregla lo que veas mal.
 7. **Enseña un borrador** con `render <proyecto> --borrador` y pregunta qué cambiaría.
-8. **Añade el sonido** si el creador lo quiere: edita `sonido.mjs` y ejecuta `sonido <proyecto>`. No puedes oír el
-   resultado, así que pídele que lo escuche.
+8. **Añade el sonido** si el creador lo quiere: edita `sonido.mjs` y ejecuta `sonido <proyecto>`. Hay efectos
+   (`{ efecto, t, db }`) y música de fondo (`{ musica, db }`), que baja sola cuando habla la voz; `sonido --catalogo` los
+   lista. Las escenas también pueden traer su sonido. No puedes oír el resultado, así que pídele que lo escuche.
 9. **Termina.** Edita `portada.mjs` y `post.txt` y ejecuta `render <proyecto>`. Todo queda en su carpeta de finales.
 
 ## Lo que aprende

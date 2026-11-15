@@ -1,12 +1,13 @@
 // Abre un proyecto: carga la voz y las escenas.
 //
 // Una escena es un archivo escenas/NN-nombre.mjs cuya exportación por defecto recibe { k, voz, mi, W, H } y devuelve
-//   { empieza, transicion, dibujar(g, t, info) }
+//   { empieza, transicion, sonido, dibujar(g, t, info) }
 // Lo pesado se hace una vez al crear la escena; dibujar() solo depende de t, porque el render dibuja trozos en paralelo.
 import { existsSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { H, HOGAR, W, fallo } from "./base.mjs";
+import { TRANSICIONES } from "./cuadro.mjs";
 import * as k from "./kit.mjs";
 import { leerVoz } from "./tiempos.mjs";
 
@@ -38,6 +39,7 @@ export async function abrir(dir) {
       e = await m.default({ k, voz, mi, W, H });
     } catch (err) { fallo(`La escena ${nombre} no carga: ${err.stack || err}`); }
     if (typeof e?.dibujar !== "function") fallo(`La escena ${nombre} no devuelve dibujar(g, t).`);
+    if (e.transicion && !(e.transicion in TRANSICIONES)) fallo(`Escena ${nombre}: no existe la transición «${e.transicion}». Hay: ${Object.keys(TRANSICIONES).join(", ")}.`);
     escenas.push({ ...e, nombre, desde: resolver(e.empieza ?? 0, voz, nombre), transicion: e.transicion || "corte" });
   }
   escenas.sort((a, b) => a.desde - b.desde);

@@ -43,6 +43,7 @@ No propongas un estilo por defecto ni rellenes sus respuestas: el estilo es lo q
 ```
 ajustes carpeta_revision=<ruta> carpeta_finales=<ruta> carpeta_assets=<ruta> idioma=<código> voz=<sistema|elevenlabs>
 ajustes color_texto=<hex> color_acento=<hex>
+ajustes acabado=<grano,vineta,papel>   # opcional: capas sobre todo el vídeo; vacío para ninguna
 ```
 
 `ajustes` crea las carpetas, y en la de assets crea `letras`, `efectos`, `audios` y `texturas`.

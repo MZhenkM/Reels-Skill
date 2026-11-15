@@ -1,7 +1,7 @@
 // Señala dónde mirar: no sustituye a ver el vídeo.
 import { createCanvas } from "@napi-rs/canvas";
 import { carpetaDe, leerAjustes, leerArgs } from "../lib/base.mjs";
-import { dibujar, preparar } from "../lib/cuadro.mjs";
+import { TRANSICIONES, dibujar, preparar } from "../lib/cuadro.mjs";
 import { abrir } from "../lib/proyecto.mjs";
 
 const PASO = 0.2, QUIETO = 0.4, SALTO = 45, TW = 54, TH = 96;
@@ -24,7 +24,7 @@ export default async function revisar(args) {
       let d = 0;
       for (let i = 0; i < lum.length; i++) d += Math.abs(lum[i] - anterior[i]);
       d /= lum.length;
-      const enCorte = proy.escenas.some((e) => Math.abs(e.desde - t) <= PASO);
+      const enCorte = proy.escenas.some((e) => t >= e.desde - PASO && t <= e.desde + (TRANSICIONES[e.transicion]?.dura ?? 0) + PASO);
       if (d > SALTO && !enCorte) avisos.push(`${t.toFixed(1)} s: salto brusco fuera de un corte.`);
       if (d < QUIETO) quietoDesde ??= t;
       else {

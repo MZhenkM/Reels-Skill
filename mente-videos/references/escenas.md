@@ -7,7 +7,8 @@ export default function escena({ k, voz, mi, W, H }) {
   // Aquí va lo pesado: cargar imágenes, generar listas con k.azar(semilla).
   return {
     empieza: "palabra",     // "palabra", "palabra#2", un número de segundos o (voz) => segundos
-    transicion: "corte",    // "corte" o "fundido"
+    transicion: "corte",    // corte, fundido, barrido, zoom, deslizar o circulo
+    sonido: "whoosh",       // opcional: suena al empezar la escena. También { efecto: "pop", db: -12, t: -0.1 }
     dibujar(g, t, info) {   // t: segundo del vídeo. info: { inicio, fin, u } con u de 0 a 1 en la escena
     },
   };
@@ -22,6 +23,18 @@ export default function escena({ k, voz, mi, W, H }) {
 - Lo importante debe quedar entre y 270 e y 1440, y lejos del borde derecho, donde las apps ponen sus botones.
 - Las escenas pueden compartir código con un archivo propio del proyecto, por ejemplo `escenas/comun/objetos.mjs`. Solo
   se cargan como escenas los `.mjs` que están directamente en `escenas/`.
+
+## Transiciones
+
+- `corte`: cambio seco. Es lo normal: úsalo casi siempre.
+- `fundido`: una se disuelve en la otra. Para cambios de tema tranquilos.
+- `barrido`: la nueva entra de izquierda a derecha. Para «y ahora, lo contrario».
+- `zoom`: la vieja se acerca y desaparece. Para entrar en un detalle.
+- `deslizar`: la vieja sube y la nueva entra desde abajo. Para pasar al siguiente punto de una lista.
+- `circulo`: la nueva crece desde el centro. Para una revelación.
+
+Durante la transición se dibujan las dos escenas, así que la que se va debe poder dibujarse un poco después de su fin.
+Una transición suena mejor con su sonido (`sonido: "whoosh"`), pero no pongas sonido en todas.
 
 ## La voz
 
@@ -40,7 +53,12 @@ segundos a mano: así la imagen sigue a la voz cuando el guion cambia.
 
 - Movimiento: `lim`, `mezcla`, `tramo(t, a, b)`, `suave`, `entra`, `sale`, `rebote`, `curva(t, [[t, valor], ...])`.
 - Azar, lienzos e imágenes: `azar(semilla)`, `lienzo(w, h)`, `asset(ruta)`, `cargar(ruta)`.
-- Cámara: `camara(pos, mira, zoom)` devuelve `{ proyecta([x, y, z]) }`, que da `{ x, y, z, escala }` o `null`.
+- Cámara 3D: `camara(pos, mira, zoom)` devuelve `{ proyecta([x, y, z]) }`, que da `{ x, y, z, escala }` o `null`.
+- Cámara 2D, al principio de `dibujar`:
+  - `temblor(t, t0, { fuerza, dura, semilla })` da `{ x, y, giro }` para una sacudida que empieza en `t0`:
+    `const s = k.temblor(t, voz.en("choca")); g.translate(s.x, s.y);`
+  - `acercar(g, u, { desde, hasta, x, y })` acerca la imagen poco a poco hacia `(x, y)`. Con `info.u`, una escena
+    fija deja de parecer muerta.
 - Dibujo: `fondo(g, colores, angulo)`, `brillo(g, x, y, r, color, alfa)`, `bola(g, x, y, r, claro, oscuro)`,
   `redondo(g, x, y, w, h, r)`, `particulas(g, opciones)`, `texto(g, cadena, x, y, opciones)`.
 

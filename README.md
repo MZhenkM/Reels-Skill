@@ -67,7 +67,13 @@ Para cambiar el diseño de la guía, edita `pagina/fuente.html` y ejecuta `npm i
 - Dibuja tus personajes y objetos en `~/.mente-videos/kit.mjs`.
 - Llena tu carpeta de assets con tus letras, sonidos y texturas.
 - Crea plantillas para tus formatos.
-- Mejora el motor: transiciones, estilos de subtítulos, más revisiones automáticas.
+- Mejora el motor. Algunas ideas que nadie ha hecho todavía:
+  - estilos de subtítulos: karaoke, palabra clave en color, rebote al entrar;
+  - texturas generadas por código: madera, tiza, cuadrícula;
+  - más acabados, como líneas de televisión antigua;
+  - que cada repetición de un efecto suene un poco distinta;
+  - barra de progreso, archivo `.srt` aparte y otros formatos (1:1, 16:9);
+  - un aviso en `revisar` cuando los dos primeros segundos no enganchan.
 
 ## Licencia
 
